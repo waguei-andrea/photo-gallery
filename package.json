@@ -2,7 +2,7 @@
   "name": "photo-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://waguei-andrea.github.io/photo-app",
+  "homepage": "https://waguei-andrea.github.io/photo-gallery",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.3.1",
