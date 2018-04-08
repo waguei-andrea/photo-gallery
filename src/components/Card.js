@@ -11,8 +11,9 @@ export default class Card extends React.Component {
   };
   toggleClass = function(e) {
     e.stopPropagation();
-    e.target.closest(".photo-card").classList.toggle("selected");
+    e.currentTarget.classList.toggle("selected");
   };
+
   render() {
     const { id, albumId, title, thumbnailUrl, url } = this.props;
     return (
