@@ -1,5 +1,5 @@
 export function fetchPhotos() {
-  return function(dispatch, getState) {
+  return (dispatch, getState) => {
     //dispatch({ type: "FETCH_PHOTOS" });
     const start = getState().photos.start || 0;
     const limit = getState().photos.limit || 100;
@@ -8,7 +8,7 @@ export function fetchPhotos() {
       start +
       "&_limit=" +
       limit;
-    fetch(url)
+    return fetch(url)
       .then(response => {
         dispatch({ type: "FETCH_PHOTOS", payload: response.json() });
       })
