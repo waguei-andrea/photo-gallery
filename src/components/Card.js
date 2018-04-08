@@ -3,13 +3,7 @@ import PropTypes from "prop-types";
 import pin from "../assets/pin.png";
 
 export default class Card extends React.Component {
-  constructor(props) {
-    super(props);
-    this.selectCopy = this.selectCopy.bind(this);
-    this.toggleClass = this.toggleClass.bind(this);
-  }
   selectCopy = function(e) {
-    //const textVal = e.target.value;
     e.preventDefault();
     e.stopPropagation();
     e.target.select();
