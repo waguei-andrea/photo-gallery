@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Open+Sans");
+
+
+/*App*/
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f4f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.App-header {
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: #86d4e6;
+}
+
+.App-header h1{
+  margin: 0;
+  font-size: 2em;
+}
+
+.App-content {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App-content-botton {
+  width: 100%;
+  padding: 20px 0 200px 0;
+}
+
+.load-more {
+  width: 80%;
+  font-size: 1.5em;
+  line-height: 2em;
+  background-color: #d7eef3;
+  margin: 0 auto;
+  box-shadow: 2px 2px 0px 2px rgb(179, 220, 220);
+  cursor: pointer;
+}
+
+.load-more:hover {
+  box-shadow: none;
+  margin: 2px auto;
+}
+
+/*Card*/
+.photo-card-container {
+  cursor: pointer;
+  height: 250px;
+  position: relative;
+  width: 150px;
+  border-radius: 6px;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+}
+.photo-card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all .5s ease-in-out;
+  width: 100%;
+  box-shadow: 0 3px 10px 0 rgba(216, 214, 214, 0.2), 0 2px 8px 0 rgba(165, 165, 165, 0.19);
+}
+
+.photo-card:hover, .photo-card.selected {
+  transform: rotateY(180deg);
+}
+
+.photo-card .photo-content {
+  background-color: #fff;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.photo-content.back {
+  background: #eaeaed;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.photo-content h2 {
+  margin-bottom: 0;
+}
+
+.photo-title {
+  font-size: .8em;
+  padding: 0 4px;
+}
+
+.photo-img {
+  width: 100px;
+  border-radius: 100px;
+  margin: 20px;
+  box-shadow: 0 3px 10px 0 rgba(152, 152, 152, 0.42), 0 2px 8px 0 rgba(165, 165, 165, 0.19);
+  border: 1px solid rgba(255,255,255, .5);
+}
+
+.numb {
+  font-size: .8em;
+}
+
+.photo-id {
+  font-size: 2em;
+}
+
+.album-id {
+  font-size: .8em;
+  display: block;
+  margin-top: -10px;
+  color: #444343;
+}
+
+.url-section {
+  padding: 15px 0;
+}
+
+.url-section label {
+  font-size: .8em;
+  font-weight: bold;
+  display: block;
+}
+
+.url-content {
+  padding: 5px 0;
+}
+
+.copy-direction {
+  font-size: .5em;
+  display: block;
+  color: #9c9898;
+}
+
+.pined {
+  display: none;
+  width: 25px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.photo-card.selected .pined {
+  display: block;
+}
+
